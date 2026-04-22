@@ -322,11 +322,7 @@ function showResult() {
         window.location.reload()
     })
     quesContainer.style.display = "none"
-
 }
-
-
-
 const quizData = {
     "Programming": prgm,
     "Physics": phy,
