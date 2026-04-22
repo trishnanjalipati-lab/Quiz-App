@@ -237,8 +237,6 @@ function loadQuestion() {
     optn.innerHTML = ""
     answer.innerHTML = ""
     label.innerHTML = `Question ${currentQues + 1} `;
-    console.log(label.innerText)
-    console.log(subject[currentQues].question)
     document.getElementById("quesn").innerHTML = subject[currentQues].question
     subject[currentQues].options.forEach((element, index) => {
         const option = document.createElement("button")

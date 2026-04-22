@@ -14,7 +14,6 @@ button.addEventListener("click", () => {
         `;
 
     const quizSubject = document.querySelectorAll(".subject")
-    quizSubject.i
     quizSubject.forEach((item) => {
         item.addEventListener("click", (e) => {
             const type = e.target.dataset.type;
