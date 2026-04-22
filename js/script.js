@@ -7,10 +7,10 @@ button.addEventListener("click", () => {
 
     subject.innerHTML =
         `
-        <p class="subject">Programming</p>
-        <p class="subject">Physics</p>
-        <p class="subject">Aptitude</p>
-        <p class="subject">Logical Reasoning</p>
+        <p class="subject">Programming 🧑‍💻</p>
+        <p class="subject">Physics 🧲</p>
+        <p class="subject">Aptitude💭</p>
+        <p class="subject">Logical Reasoning 💡</p>
         `;
 
     const quizSubject = document.querySelectorAll(".subject")
