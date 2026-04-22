@@ -1,0 +1,133 @@
+body {
+    /* background-color: rgb(190, 255, 93); */
+    margin: 0;
+    color: black;
+    min-height: 100vh;
+    background-image: url(../assets/galaxy.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.type-container,
+.ques-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    background-color: azure;
+    border-radius: 10px;
+}
+
+.text {
+    margin: 0;
+}
+
+#start,
+#home,
+#retry {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#start:hover,
+#home:hover,
+#retry:hover {
+    background-color: silver;
+    zoom: 104%;
+}
+
+.type {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    cursor: pointer;
+
+}
+
+.subject {
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.subject:hover {
+    background-color: silver;
+    transform: scale(1.04);
+}
+
+.ques-container {
+    width: 245px;
+    height: 300px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: stretch;
+    padding: 0;
+}
+
+.option button {
+    display: block;
+    background-color: gray;
+    border-radius: 5px;
+    padding: 3px;
+    cursor: pointer;
+
+}
+
+#answer {
+    font-weight: bold;
+}
+
+#label {
+    font-weight: bold;
+    width: 100px;
+}
+
+#label-container {
+    display: flex;
+    justify-content: space-between;
+    width: stretch;
+}
+
+#result {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    background-color: azure;
+    border-radius: 10px;
+    width: 245px;
+    height: 300px;
+
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .type {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .type p {
+        margin: 10px 0 0 0;
+    }
+
+
+}
