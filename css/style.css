@@ -1,8 +1,9 @@
 body {
     /* background-color: rgb(190, 255, 93); */
     margin: 0;
+    position: relative;
     color: #fff;
-    min-height: 100vh;
+    height: 100dvh;
     background-image: url(../assets/galaxy.jpg);
     background-size: cover;
     background-position: center;
