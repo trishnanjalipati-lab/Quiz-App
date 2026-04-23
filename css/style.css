@@ -1,7 +1,7 @@
 body {
     /* background-color: rgb(190, 255, 93); */
     margin: 0;
-    color: black;
+    color: #fff;
     min-height: 100vh;
     background-image: url(../assets/galaxy.jpg);
     background-size: cover;
@@ -12,6 +12,16 @@ body {
     justify-content: center;
 }
 
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(3px);
+    z-index: 0;
+    background: transparent;
+}
+
+
 .type-container,
 .ques-container {
     display: flex;
@@ -19,7 +29,13 @@ body {
     flex-direction: column;
     padding: 20px;
     justify-content: center;
-    background-color: azure;
+    background-color: rgba(240, 255, 255, 0.145);
+    border-top: 1px solid rgba(245, 245, 245, 0.475);
+    border-left: 1px solid rgba(245, 245, 245, 0.471);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.268);
+    backdrop-filter: blur(6px);
+    z-index: 1;
+    box-shadow: 20px;
     border-radius: 10px;
 }
 
@@ -58,6 +74,7 @@ body {
     border: 2px solid black;
     padding: 10px;
     background-color: #fff;
+    color: black;
     cursor: pointer;
 }
 
@@ -81,7 +98,7 @@ body {
 
 .option button {
     display: block;
-    background-color: gray;
+    background-color: #fff;
     border-radius: 5px;
     padding: 3px;
     cursor: pointer;
@@ -109,7 +126,13 @@ body {
     flex-direction: column;
     padding: 20px;
     justify-content: center;
-    background-color: azure;
+    background-color: rgba(240, 255, 255, 0.145);
+    border-top: 1px solid rgba(245, 245, 245, 0.475);
+    border-left: 1px solid rgba(245, 245, 245, 0.471);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.268);
+    backdrop-filter: blur(6px);
+    z-index: 1;
+    box-shadow: 20px;
     border-radius: 10px;
     width: 245px;
     height: 300px;
