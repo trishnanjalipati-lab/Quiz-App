@@ -4,7 +4,7 @@ const quesContainer = document.querySelector(".ques-container")
 const optn = document.getElementById("option")
 const answer = document.getElementById("answer")
 const label = document.getElementById("label")
-
+document.title = `${type} Quiz`
 const prgm = [
     {
         question: "What is JavaScript?",
@@ -218,7 +218,7 @@ let score = 0
 let timer;
 function startTimer() {
     clearInterval(timer)
-    let time = 10;
+    let time = 15;
     let clock = document.getElementById("stopwatch")
     clock.innerHTML = `00:${time < 10 ? "0" : ""}${time}`
     timer = setInterval(() => {
